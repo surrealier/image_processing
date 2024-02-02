@@ -54,15 +54,6 @@ def create_gaussian_kernel(size, sigma): # size: 커널의 크기, sigma: 가우
     kernel /= np.sum(kernel) # 커널의 모든 원소의 합이 1이 되도록 정규화
     return kernel
 
-def canny_filter(img):
-    pass
-
-def prewitt_filter(img):
-    pass
-
-def log_filter(img):
-    pass
-
 image = cv2.imread('Lenna.png', cv2.IMREAD_GRAYSCALE)
 sobel_filtered = sobel_filter(image)
 unsharp_filtered = unsharp_masking(image)
